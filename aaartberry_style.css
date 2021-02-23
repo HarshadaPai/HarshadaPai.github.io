@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size:30px;
+}
+
+a{ 
+    text-decoration:wavy;
+    color:rgb(124, 2, 63);
+}
+p{
+    color:black;
+}
+h1{
+    font-family: 'Ranchers', cursive;
+}
+body{
+    font-size:30px;
+    font-family: 'Patrick Hand', cursive;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 40%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size:50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background:rgb(97, 1, 30);
+    color: rgb(245, 243, 243);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background:rgb(29, 0, 56)}
+.header{
+    background: radial-gradient(rgb(221, 177, 212),#e0445e,#ccc);
+}
+.header .row{
+    margin-top:70px ;
+}
+
+.categories{
+    margin: 70px 0;
+
+}
+.col-3{
+    flex:30;
+    min-width:250px;
+    margin-bottom:30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color:rgb(153, 8, 37); 
+}
+.title::after{
+    content:'';
+    background:black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translatex(-50%)
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.rating{
+    position:relative;
+    transform: translate(-50%,-50%);
+    display: flex;
+    
+}
+.rating input {
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    background:#ccc;
+
+}
+.rating label:before{
+    content:" f005";
+    font-family: fontAwesome;
+    position :relative;
+    display:block;
+}
+/*---------footer----------*/
+
+.footer{
+    background :rgb(141, 62, 99);
+    color: white;
+    font-size: 50px;
+    padding: 60px 0 20px;
+}
+.gallery{
+    margin: 10px 50px;
+}
+.gallery img{
+    width: 230px;
+    padding: 5px;
+    transition: 1s;
+}
+.gallery img:hover{
+    transform:scale(1.1);
+}
